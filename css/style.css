@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/* パソコン、タブレット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div#wrapper {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #eee;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    color: blue;
+    border-bottom: double 3px;
+}
+
+h2 {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    color: red;
+    border-bottom: solid 2px;
+}
+
+div#fadein_fadeout {
+    width: 500px;
+    margin: 0 auto;
+    height: 300px;
+    margin-top: 20px;
+}
+
+div#slider {
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+div#slider {
+    position: relative;
+    overflow: hidden;
+}
+
+#slider img {
+    position: absolute;
+    top: 0;
+    border: 0;
+}
+p {
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+}
+
+/*タブレット 縦のみ	*/
+@media screen and (max-width: 1024px) and (orientation: portrait){
+    
+}
+/* タブレット 縦から */
+@media screen and (max-width: 1024px){
+    
+}
+/* スマホ 横のみ */
+@media screen and (max-width: 896px) and (orientation: landscape){
+    
+}
+/* スマホ 横から */ 
+@media screen and (max-width: 896px){
+    
+}
+/* スマホ　縦からは */
+@media screen and (max-width: 480px){
+    
+}
