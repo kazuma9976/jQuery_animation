@@ -55,24 +55,24 @@ $(function(){
   $.each(images_2, (index, image) => {
         $('#slider').append($('<img>', {src: image}));
     });
-    // 1番目と２番目の画像をmargin-left:-500pxの位置に設定
-    $('#slider img').eq(1).css('margin-left', '-500px');
-    $('#slider img').eq(2).css('margin-left', '-500px');
+    // 1番目と２番目の画像をmargin-left:-390pxの位置に設定
+    $('#slider img').eq(1).css('margin-left', '-390px');
+    $('#slider img').eq(2).css('margin-left', '-390px');
   
   let s_count = 0;
   // sliderの非同期処理
   const slider = () => {
         $.when(
-            // 0番目の画像を、margin-left:500pxの位置に移動。
-            $('#slider img').eq(s_count % 3).animate({marginLeft: '500px'}, 2000),
+            // 0番目の画像を、margin-left:390pxの位置に移動。
+            $('#slider img').eq(s_count % 3).animate({marginLeft: '390px'}, 2000),
             // 1番目の画像を、margin-left:0pxの位置に移動。
             $('#slider img').eq((s_count + 1) % 3).animate({marginLeft: '0px'}, 2000),
             // 挙動確認
             console.log('a')
         ).done(
             () => {
-                // 0番目の画像を、margin-left:-500pxの位置に移動
-                $('#slider img').eq(s_count % 3).css('margin-left', '-500px');
+                // 0番目の画像を、margin-left:-390pxの位置に移動
+                $('#slider img').eq(s_count % 3).css('margin-left', '-390px');
                 // 挙動確認
                 console.log('b');
             }
