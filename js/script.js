@@ -3,7 +3,6 @@ $(function(){
     
   // テキストアニメーション
   const title = $('h1').text();
-  //console.log(title);
   $('h1').text('');
   let count = 1;
   // text_animation関数を定義
@@ -18,7 +17,7 @@ $(function(){
       }
   };
   
-  //タイマー処理、text_animation関数の実行(0,1秒間隔でタイピングのように文字を表示)。
+  //タイマー処理、text_animation関数の実行(0.1秒間隔でタイピングのように文字を表示)。
   const timer = setInterval(text_animation, 100);
   
   // 経過秒数表示
@@ -32,7 +31,7 @@ $(function(){
   // count_up関数の実行
   setInterval(count_up, 1000);
   
-  // 画像アニメーション（fadein/fadeout）
+  // 画像アニメーション(fadein/fadeout)
   const images_1 = ['images/1.jpg', 'images/2.jpg', 'images/3.jpg'];
   let ff_count = 1;
   // opacityを使用したアニメーション。
@@ -47,10 +46,10 @@ $(function(){
       });
   };
   
-  // 5秒間隔で実行
+  // 5秒間隔でfadein/fadeout実行
   setInterval(fadein_fadeout, 5000);
   
-  //画像アニメーション(slider)
+  //画像アニメーション(Slider)
   const images_2 = ['images/a.jpg', 'images/b.jpg', 'images/c.jpg'];
   $.each(images_2, (index, image) => {
         $('#slider').append($('<img>', {src: image}));
